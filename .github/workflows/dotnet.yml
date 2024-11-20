@@ -21,6 +21,6 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore src/*.sln
+      run: dotnet restore AgeCalculator/*.sln
     - name: Build
       run: dotnet build --no-restore src/*.sln
